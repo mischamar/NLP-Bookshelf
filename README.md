@@ -14,6 +14,16 @@ Project is created with:
 
 ## Code examples
 
+Code for the Segue that leads from the landing page to the MainPage:
+```
+@IBAction func ContinuetoMain(_ sender: Any) {
+        self.performSegue(withIdentifier: "MainScreenSegue", sender: self)
+       
+    }
+   
+```
+
+
 Button that directs the User to the Devices library (enact it to crop the pictures once chosen):
 *must add the - privacy - camera usage description- in the info.plist
 ```
