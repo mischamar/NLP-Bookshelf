@@ -1,1 +1,22 @@
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe' #type in the path where you have the programm installed
+import requests
+import cv2
 
+image = cv2.imread("templates/buch.JPG")
+grayscale = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+adaptive = cv2.adaptiveThreshold(grayscale, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 11)
+
+booktitle = pytesseract.image_to_string(adaptive)
+print(booktitle)
+
+api_key = "AIzaSyDlp19ogXeUuugzO3UZYRUqL9RVSzo2nQk"
+url = f"https://www.googleapis.com/books/v1/volumes?q={booktitle}&key={api_key}"
+response = requests.get(url)
+json_response = response.json()
+print(json_response)
+volume_info = json_response['items'][0]['volumeInfo']
+api_title = volume_info.get('title')
+api_author = volume_info.get('authors')
+print('title:', api_title)
+print('author:', api_author)
