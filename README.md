@@ -63,6 +63,10 @@ pod 'RealmSwift'
 
 pod "RealmSearchViewController"
 ```
+### Info.plist:
+Add the ' - privacy - photo library description-' and '- privacy - photo library description-' to your info.plist to ensure the necessary privacy settings.
+
+### Interface Builder:
 
 Using the interface builder create:
 
@@ -71,22 +75,69 @@ Using the interface builder create:
 • One ImageView on top for the logo
 • Two buttons on the bottom
 
+Next equip the prototype cell with with two Labels for the book title and author name. Add an ImageView for the book cover.
+Once you adjusted the features to the correct size add the constraints.
 
 
 
 
+## Code
 
-## Code examples
-
-Code for the Segue that leads from the landing page to the MainPage:
+Open a seperate swift.file to build you book class/ realm object. Add the following code:
 ```
-@IBAction func ContinuetoMain(_ sender: Any) {
-        self.performSegue(withIdentifier: "MainScreenSegue", sender: self)
-       
+class Book {
+    
+    var image: UIImage?
+    var title: String
+    var author: String
+    
+    init(image: UIImage, title: String, author: String) {
+        self.image = image
+        self.title = title
+        self.author = author
     }
-   
+    
+}
+
 ```
 
+Open a seperate swift.file for your book cell. Add the identifier via you storyboard. Drag the outlets(2xLabel, ImageView) into the file and add the following code:
+```
+class BookCell: UITableViewCell {
+   
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var author: UILabel!
+    
+    override func awakeFromNib(){
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+}
+
+```
+
+Open a seperate swift.file for your book cell. Add the identifier via you storyboard. Drag the outlets(2xLabel, ImageView) into the file and add the following code:
+```
+class BookCell: UITableViewCell {
+   
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var author: UILabel!
+    
+    override func awakeFromNib(){
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+}
+
+```
 
 Button that directs the User to the Devices library (enact it to crop the pictures once chosen):
 *must add the - privacy - camera usage description- in the info.plist
