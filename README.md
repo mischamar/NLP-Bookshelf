@@ -76,7 +76,7 @@ Using the interface builder create:
 • Two buttons on the bottom
 
 Next equip the prototype cell with with two Labels for the book title and author name. Add an ImageView for the book cover.
-Once you adjusted the features to the correct size add the constraints.
+Once you adjusted the features to the correct size add the constraints. Change the ViewController class to MainScreenViewController.
 
 
 
@@ -120,49 +120,4 @@ class BookCell: UITableViewCell {
 
 ```
 
-Open a seperate swift.file for your book cell. Add the identifier via you storyboard. Drag the outlets(2xLabel, ImageView) into the file and add the following code:
-```
-class BookCell: UITableViewCell {
-   
-    @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var author: UILabel!
-    
-    override func awakeFromNib(){
-        super.awakeFromNib()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-}
-
-```
-
-Button that directs the User to the Devices library (enact it to crop the pictures once chosen):
-*must add the - privacy - camera usage description- in the info.plist
-```
-//GalleryButton
-    @IBAction func GalleryButtom(_ sender: UIButton) {
-    let vc = UIImagePickerController()
-        vc.sourceType = .photoLibrary
-        vc.delegate = self
-        vc.allowsEditing = true
-        present(vc, animated: true)
-    }
-    
-```
-
-Button that directs the User to the Devicesa Camer (enact it to crop the pictures once chosen):
-*must add the - privacy - photo library description- in the info.plist
-```
-//CameraButton
-    @IBAction func CameraButton(_ sender: UIButton) {
-        let vc = UIImagePickerController()
-            vc.sourceType = .camera
-            vc.delegate = self
-            vc.allowsEditing = true
-            present(vc, animated: true)
-    }
-    
-```
+Open the ViewController file and add the code found in the repository.
