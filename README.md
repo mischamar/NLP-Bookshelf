@@ -64,9 +64,13 @@ pod 'RealmSwift'
 pod "RealmSearchViewController"
 ```
 
+Using the interface builder create:
 
-• 
-•
+• TableView
+• TableView Cells
+• One ImageView on top for the logo
+• Two buttons on the bottom
+
 
 
 
