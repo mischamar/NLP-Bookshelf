@@ -24,8 +24,8 @@ Project is created with:
 	• Official iOS toolbar guidlines used for button sizes. https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/
 
 ## Front-End
-	* Project written in swift for iOS applications.
-	* IDE → Xcode
+* Project written in swift for iOS applications.
+* IDE → Xcode
 
 ### Step by step guide:
 
