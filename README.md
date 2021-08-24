@@ -13,33 +13,24 @@ Project is created with:
 * IOS: 14.6 (for simulating)
 
 ## Design
-• Prototype created in Figma (https://www.figma.com/proto/YMwywqzsWeA9ZtSVqfyDID/dunkle-Farben-Beispiel?node-id=139%3A757&starting-point-node-id=79%3A148)
-
-• Free prototype templates are from figma.com/community/ 
-
-• Label, Icon and simple Label created in Procreate.
-
-• Dark design for health benefits and because it's generally prefered by users.
-
-• Grey buttons to mark interactive objects
-
-• icons8.de used for the filter, library and camera icon
-
-• coolors.co used for colour scheme inspiration
-
-• pilestone.com used to check if the design is compatible for users with colour blindness
-
-• Official iOS toolbar guidlines used for button sizes. https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/
+	• Prototype created in Figma (https://www.figma.com/proto/YMwywqzsWeA9ZtSVqfyDID/dunkle-Farben-Beispiel?node-id=139%3A757&starting-point-node-id=79%3A148)
+	• Free prototype templates are from figma.com/community/ 
+	• Label, Icon and simple Label created in Procreate.
+	• Dark design for health benefits and because it's generally prefered by users.
+	• Grey buttons to mark interactive objects
+	• icons8.de used for the filter, library and camera icon
+	• coolors.co used for colour scheme inspiration
+	• pilestone.com used to check if the design is compatible for users with colour blindness
+	• Official iOS toolbar guidlines used for button sizes. https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/
 
 ## Front-End
-• Project written in swift for iOS applications.
-
-• IDE → Xcode
+	• Project written in swift for iOS applications.
+	• IDE → Xcode
 
 Step by step guide:
-• Download the latest XCode application from your Appstore. (https://apps.apple.com/de/app/xcode/id497799835?mt=12)
 
-• Create a new project using storyboard.
+	• Download the latest XCode application from your Appstore. (https://apps.apple.com/de/app/xcode/id497799835?mt=12)
+	• Create a new project using storyboard.
 
 • install https://cocoapods.org
 
