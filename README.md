@@ -12,7 +12,7 @@ Project is created with:
 * Xcode: 12.5
 * IOS: 14.6 (for simulating)
 
-##Design
+## Design
 • Prototype created in Figma (https://www.figma.com/proto/YMwywqzsWeA9ZtSVqfyDID/dunkle-Farben-Beispiel?node-id=139%3A757&starting-point-node-id=79%3A148)
 • Free prototype templates are from figma.com/community/ 
 • Label, Icon and simple Label created in Procreate.
@@ -23,7 +23,7 @@ Project is created with:
 • pilestone.com used to check if the design is compatible for users with colour blindness
 • Official iOS toolbar guidlines used for button sizes. https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/
 
-##Front-End
+## Front-End
 • Project written in swift for iOS applications.
 • IDE → Xcode
 
