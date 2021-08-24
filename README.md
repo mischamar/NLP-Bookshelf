@@ -27,7 +27,7 @@ Project is created with:
 	• Project written in swift for iOS applications.
 	• IDE → Xcode
 
-# Step by step guide:
+### Step by step guide:
 
 	• Download the latest XCode application from your Appstore. (https://apps.apple.com/de/app/xcode/id497799835?mt=12)
 	• Create a new project using storyboard.
