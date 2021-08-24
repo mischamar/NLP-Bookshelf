@@ -71,10 +71,10 @@ Add the ' - privacy - photo library description-' and '- privacy - photo library
 
 Using the interface builder create:
 
-• TableView
-• TableView Cells
-• One ImageView on top for the logo
-• Two buttons on the bottom
+- TableView
+- TableView Cells
+- One ImageView on top for the logo
+- Two buttons on the bottom
 
 Next equip the prototype cell with with two Labels for the book title and author name. Add an ImageView for the book cover.
 Once you adjusted the features to the correct size add the constraints. Change the ViewController class to MainScreenViewController.
