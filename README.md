@@ -2,7 +2,8 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Code examples](#code-examples)
+* [Design](#design)
+* [Front-End](#front-end)
 
 ## General info
 This project is a simple project created for a "Praxisprojekt". An iOS mobile application that analyzes images of books captured by device and converts the information in a structured form into a TableView containing title, author and thumbnail.
